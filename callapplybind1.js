@@ -46,3 +46,6 @@ user.getName.apply(user3,['Bakiyavel','kaviya']) //parameter as to pass array of
 var name = 'hello';
 var newfn = user.getName;
 newfn();
+
+//when u create a object by using new keyword 
+new user.getName(); //output :undefined by using new keyword it always create a empty object and refereing to it 
