@@ -36,3 +36,55 @@
     transform: rotate(360deg);
   }
 }
+
+.inputContainer i {
+  position: absolute;
+}
+.icon{
+  padding: 4px 15px 4px 15px;
+  color: rgb(49, 0, 128);
+  text-align: left;
+}
+.searchBox {
+outline: none;
+}
+.searchBox[type=search] {
+background: #ededed ;
+  /* url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center; */
+border: solid 1px #ccc;
+padding: 4px 2px 4px 30px;
+  margin:0px 8px 0px 8px;
+width: 100px;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-transition: all .5s;
+-moz-transition: all .5s;
+transition: all .5s;
+}
+.searchBox[type=search]:focus {
+width: 200px;
+background-color: #fff;
+border-color:#429CE9;
+-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+.searchBox[type="search"]::-webkit-search-cancel-button {
+-webkit-appearance: none;
+height: 1em;
+width: 1em;
+border-radius: 50em;
+background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+background-size: contain;
+opacity: 0;
+pointer-events: none;
+}
+.searchBox[type="search"]:focus::-webkit-search-cancel-button {
+opacity: .3;
+pointer-events: all;
+}
+
+.searchBox[type="search"].dark::-webkit-search-cancel-button {
+filter: invert(1);
+}

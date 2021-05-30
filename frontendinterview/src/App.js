@@ -3,7 +3,8 @@ import './App.css';
 import Callapplybind from './Callapplybind'
 import Stateunderstand from './Stateunderstand';
 import PreviousState from './PreviousState';
-import Debounce from './Debounce';
+import DebounceReact from './DebounceReact';
+import DebounceReacthooks from './DebounceReacthooks'
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <Callapplybind/> */}
       {/* <Stateunderstand/> */}
       {/* <PreviousState /> */}
-      <Debounce />
+      {/* <DebounceReact /> */}
+      <DebounceReacthooks/>
     </div>
   );
 }
