@@ -5,6 +5,7 @@ import Stateunderstand from './Stateunderstand';
 import PreviousState from './PreviousState';
 import DebounceReact from './DebounceReact';
 import DebounceReacthooks from './DebounceReacthooks'
+import ThrottlingReact from './ThrottlingReact';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <Stateunderstand/> */}
       {/* <PreviousState /> */}
       {/* <DebounceReact /> */}
-      <DebounceReacthooks/>
+      {/* <DebounceReacthooks/> */}
+      <ThrottlingReact/>
     </div>
   );
 }

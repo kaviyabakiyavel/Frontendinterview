@@ -24,6 +24,7 @@ function Debounce() {
     const optimizedfn = useCallback(debounce(handlechgange))
     return (
         <div>
+            <h3>Debounce Example React hooks</h3>
             <input 
                 type={'text'} 
                 name={'search'} 

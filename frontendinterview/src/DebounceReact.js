@@ -40,9 +40,43 @@
 
 import React from "react"
 import './App.css'
-import { FaSearch } from "react-icons/fa";
+
 
 function Search(props) {
+    let counter = 0;
+    //did dynamic search using for loop
+    // const getSearchedValue = (value) => {
+    //     debugger
+    //     let data = [...this.props.GetSubAddUserDetails]
+    //     let filterkey = ["user_name", 'login_id', 'email_id','country','location','department','phone_no','is_subscription_admin','user_type']
+    //     let result = []
+    //     for (let i = 0; i < data.length; i++) {
+    //         for (let j = 0; j < filterkey.length; j++) {
+    //             debugger
+    //             let key = filterkey[j]
+    //             if (data[i][key] === value[0]) {
+    //                 result.push(data[i]);
+    //                 break;
+    //             }
+    //         }
+    //     }
+    //     console.log("result", result)
+    //     this.setState({
+    //         searchedFilteredData: result
+    //     })
+    // }
+    //es6 methods  https://stackoverflow.com/questions/45991273/how-to-use-filter-to-search-in-multiple-key-values-of-objects-in-an-array
+    // const getSearchedValue = (value) => {
+    //     let data = [...this.props.GetSubAddUserDetails]
+    //     let searchvalue = value[0].toLowerCase();
+    //     let filtered =  data.filter(function (eachobj) {
+    //         return Object.values(eachobj).some(val => String(val).toLowerCase().includes(searchvalue));
+    //     });
+    //     this.setState({
+    //         searchedFilteredData: filtered
+    //     })
+    // }
+    //loadash
     const debounce = (func, delay) => {
         let timer;
         return function (...args) {
@@ -55,19 +89,21 @@ function Search(props) {
     }
     const handlechange = (value) => {
         console.log("value", value)
+        console.log("no of times event is fired",counter++)
+        getSearchedValue(value)
     }
     const optimizedfn = debounce(value => handlechange(value), 2000)
     return (
-        <div className="inputContainer">
-            <i className="icon"><FaSearch size={12} /></i>
+        <div>
+            <h3>Debounce Example React</h3>
             <input
-                type={'search'}
-                name={'search'}
-                placeholder={'Search'}
+                type="text"
+                placeholder="Enter text"
+                // onChange={(event) => handlechange(event.target.value)}
                 onChange={(event) => optimizedfn(event.target.value)}
-                className="searchBox"
             />
         </div>
+
     );
 }
 export default Search;

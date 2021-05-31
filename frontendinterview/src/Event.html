@@ -1,0 +1,34 @@
+<!-- // Event bubbling and event capturing are the two ways the event propagated into DOM tree
+//1)Event bubbling( down to up)
+// onclickchild()
+// onclickparent()
+// onclickgrandparent() -->
+<!-- // event bubbling capturing the event from child to parent
+//2)Event Capturing (Event trickling)(up to down)
+// onclickgrandparent()
+// onclickparent()
+// onclickchild()
+// event capturing capturing the event from parent to child. And event capturing is also know as event trickling.
+ -->
+
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <style>
+        div {
+            min-width: 100px;
+            min-height: 100px;
+            padding: 30px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="grandparent">
+        <div id="parent">
+            <div id="child"></div>
+        </div>
+    </div>
+    <script src="Eventbubbling.js"></script>
+</body>
+</html>
