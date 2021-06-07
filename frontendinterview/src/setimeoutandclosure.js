@@ -1,19 +1,21 @@
-// function x() {
+// function x(){
 //     var a = 10;
-//     setTimeout(() => {
-//         console.log(a);
-//     }, 3000);
+//     setTimeout(function(){
+//         console.log(i);
+//     },3000);
 //     console.log("hello kaviya");
 // }
 // x();
 
 function x() {
     for (var i = 1; i <= 5; i++) {
-        setTimeout(() => {
+        console.log("hello" + i)
+        setTimeout(function () {
+            debugger
             console.log(i);
         }, i * 1000);
-        console.log("hello kaviya");
     }
+    console.log("hello kaviya");
 }
 x();
 
@@ -29,3 +31,30 @@ x();
 //Expected output :
 //hello kaviya
 //6 print five times 
+
+// function x() {
+//     //when ever loop excute i will be a new variable all together.
+//     //callback function as new value of i in it.
+//     for (let i = 0; i <= 5; i++) {
+//         setTimeout(function () {
+//             console.log(i);
+//         }, i * 1000);
+//     }
+//     console.log("Hello kaviya");
+// }
+// x();
+
+
+// function x() {
+//     for (var i = 1; i <= 5; i++) {
+//         //creates a new copy of i 
+//         function close(i) {
+//             setTimeout(() => {
+//                 console.log(i);
+//             }, i * 1000);
+//             console.log("hello kaviya");
+//         }
+//         close(i)
+//     }
+// }
+// x();

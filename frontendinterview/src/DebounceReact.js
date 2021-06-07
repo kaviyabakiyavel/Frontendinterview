@@ -90,7 +90,7 @@ function Search(props) {
     const handlechange = (value) => {
         console.log("value", value)
         console.log("no of times event is fired",counter++)
-        getSearchedValue(value)
+       // getSearchedValue(value)
     }
     const optimizedfn = debounce(value => handlechange(value), 2000)
     return (

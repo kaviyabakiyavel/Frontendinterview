@@ -13,7 +13,7 @@ function App() {
       {/* <Callapplybind/> */}
       {/* <Stateunderstand/> */}
       {/* <PreviousState /> */}
-      <DebounceReact />
+      {/* <DebounceReact /> */}
       {/* <DebounceReacthooks/> */}
       {/* <ThrottlingReact/> */}
     </div>
