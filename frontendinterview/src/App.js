@@ -6,6 +6,7 @@ import PreviousState from './PreviousState';
 import DebounceReact from './DebounceReact';
 import DebounceReacthooks from './DebounceReacthooks'
 import ThrottlingReact from './ThrottlingReact';
+import Infinitescroll from './Inifinitescroll/Infinitescroll'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       {/* <DebounceReact /> */}
       {/* <DebounceReacthooks/> */}
       {/* <ThrottlingReact/> */}
+      <Infinitescroll/>
     </div>
   );
 }
